@@ -1,0 +1,109 @@
+{
+    "data": [
+        {
+            "type": "orders",
+            "id": "AAasdwjAxNDg1",
+            "attributes": {
+                "code": "154201485",
+                "totalPrice": 4090,
+                "paymentMode": "PREPAID",
+                "plannedDeliveryDate": 1614571200000,
+                "creationDate": 1614529720489,
+                "isKaspiDelivery": false,
+                "deliveryMode": "DELIVERY_LOCAL",
+                "deliveryAddress": {
+                    "streetName": "12-й микрорайон",
+                    "streetNumber": "4",
+                    "town": "Алматы",
+                    "district": null,
+                    "building": null,
+                    "formattedAddress": "Алматы,  кв. 122",
+                    "latitude": 43.2215803,
+                    "longitude": 76.8705957
+                },
+                "signatureRequired": false,
+                "preOrder": false,
+                "state": "NEW",
+                "approvedByBankDate": 1614529720944,
+                "status": "APPROVED_BY_BANK",
+                "customer": {
+                    "id": "DssA12344VF3Nd==",
+                    "name": "DDDDD",
+                    "cellPhone": "7022221121",
+                    "firstName": "DDDDD",
+                    "lastName": "Di"
+                },
+                "deliveryCost": 0
+            },
+            "relationships": {
+                "user": {
+                    "links": {
+                        "self": "https://bbb/shop/api/v2/orders/AAasdwjAxNDg1/relationships/user",
+                        "related": "https://bbb/shop/api/v2/orders/AAasdwjAxNDg1/user"
+                    },
+                    "data": {
+                        "type": "customers",
+                        "id": "DssA12344VF3Nd=="
+                    }
+                },
+                "entries": {
+                    "links": {
+                        "self": "https://bbb/shop/api/v2/orders/AAasdwjAxNDg1/relationships/entries",
+                        "related": "https://bbb/shop/api/v2/orders/AAasdwjAxNDg1/entries"
+                    },
+                    "data": [
+                        {
+                            "type": "orderentries",
+                            "id": "AAasdwjAxNDg1IyMw"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "https://bbb/shop/api/v2/orders/AAasdwjAxNDg1"
+            }
+        }
+    ],
+    "included": [
+        {
+            "type": "orderentries",
+            "id": "AAasdwjAxNDg1IyMw",
+            "attributes": {
+                "quantity": 10,
+                "totalPrice": 4090,
+                "entryNumber": 0,
+                "deliveryCost": 0,
+                "basePrice": 409
+            },
+            "relationships": {
+                "deliveryPointOfService": {
+                    "links": {
+                        "self": "https://bbb/shop/api/v2/orderentries/AAasdwjAxNDg1IyMw/relationships/deliveryPointOfService",
+                        "related": "https://bbb/shop/api/v2/orderentries/AAasdwjAxNDg1IyMw/deliveryPointOfService"
+                    },
+                    "data": {
+                        "type": "pointofservices",
+                        "id": "TWFnbnVtXzE3MTg="
+                    }
+                },
+                "product": {
+                    "links": {
+                        "self": "https://bbb/shop/api/v2/orderentries/AAasdwjAxNDg1IyMw/relationships/product",
+                        "related": "https://bbb/shop/api/v2/orderentries/AAasdwjAxNDg1IyMw/product"
+                    },
+                    "data": {
+                        "type": "masterproducts",
+                        "id": "MTAwMjIzMDg5"
+                    }
+                }
+            },
+            "links": {
+                "self": "https://bbb/shop/api/v2/orderentries/AAasdwjAxNDg1IyMw"
+            }
+        }
+    ],
+    "meta": {
+        "pageCount": 1,
+        "totalCount": 1
+    }
+}
